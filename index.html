@@ -5,8 +5,173 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <!--Logo-->
+        <a class="logo header-logo">Device</a>
+        <!--//Logo-->
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+        <!--User Links-->
+        <div class="user-links-wrapper">
+          <form class="search-form" action="" method="get">
+            <label class="visually-hidden" for="search-form__input">Поиск по сайту</label>
+            <input type="search" class="search-form__input" name="search-input" id="search-form__input" placeholder="Поиск по сайту">
+          </form>
+          <ul class="user-nav">
+            <li>
+              <a class="user-nav__item user-nav__item--user">Войти</a>
+            </li>
+            <li>
+              <a class="user-nav__item user-nav__item--compare">Сравнить</a>
+            </li>
+            <li>
+              <a class="user-nav__item user-nav__item--cart">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <!--//Header Links-->
 
+        <!--Header Nav-->
+        <nav class="header-nav">
+          <ul class="catalog-list">
+            <li>
+              <a class="catalog-list__link" href="catalog.html">каталог товаров</a>
+              <ul class="catalog-items">
+                <li>
+                  <a class="catalog-item" href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a class="catalog-item" href="#">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a class="catalog-item" href="#">Экшн-камеры</a>
+                </li>
+                <li>
+                  <a class="catalog-item" href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a class="catalog-item" href="#">Умные часы</a>
+                </li>
+                <li>
+                  <a class="catalog-item" href="#">Квадрокоптер</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="site-nav">
+            <li>
+              <a class="site-nav__item" href="#">доставка</a>
+            </li>
+            <li>
+              <a class="site-nav__item" href="#">гарантия</a>
+            </li>
+            <li>
+              <a class="site-nav__item" href="#">контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!--//Header Nav-->
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <!--About Us-->
+        <section class="about">
+          <h2 class="section-title">О нас</h2>
+          <p class="about-desc">Огромный выбор гаджетов не оставит равнодушным гика,
+            который есть в каждом из нас.</p>
+          <p class="about-desc">Мы можем доставить ваш товар в самые отдаленные точки
+            России! DEVICE работает со многими транспортными компаниями:</p>
+          <ul class="about-partners">
+            <li class="about-partner__item">Деловые линии</li>
+            <li class="about-partner__item">Автотрейдинг</li>
+            <li class="about-partner__item">ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="link" href="#">подробнее о нас</a>
+        </section>
+        <!--//About Us-->
+
+        <!--Contacts-->
+        <section class="contacts">
+          <h2 class="section-title">Контакты</h2>
+          <p class="about-desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+            проверить работоспособность покупки. Всякое бывает.</p>
+          <a class="map" href="#">
+            <img src="img/map/map.png" alt="Карта проезда" width="" height="">
+          </a>
+          <a class="link" href="#">напишите нам</a>
+        </section>
+        <!--//Contacts-->
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <!--First Line-->
+        <div class="row">
+          <!--Logo-->
+          <a class="logo footer-logo">Device</a>
+          <!--//Logo-->
+
+          <!--Footer Links-->
+          <div class="footer-links-wrapper">
+            <ul class="user-nav user-nav--footer">
+              <li>
+                <a class="user-nav--footer__item user-nav__item--user">Войти</a>
+              </li>
+              <li>
+                <a class="user-nav--footer__item user-nav__item--compare">Сравнить</a>
+              </li>
+              <li>
+                <a class="user-nav--footer__item user-nav__item--cart">Корзина</a>
+              </li>
+            </ul>
+          </div>
+          <!--//Footer Links-->
+        </div>
+        <!--//First Line-->
+
+        <!--Second Line-->
+        <div class="row">
+          <span class="footer-address">г. Москва, ул. Строителей, 15</span>
+          <ul class="site-nav footer-nav">
+            <li>
+              <a class="site-nav footer-nav__item" href="#">доставка</a>
+            </li>
+            <li>
+              <a class="site-nav footer-nav__item" href="#">гарантия</a>
+            </li>
+            <li>
+              <a class="site-nav footer-nav__item" href="#">контакты</a>
+            </li>
+          </ul>
+          <span class="footer-phone">Тел.:
+            <a href="tel:+74954959595">+7 (495) 495-95-95</a>
+          </span>
+        </div>
+        <!--//Second Line-->
+
+        <!--Third Line-->
+        <div class="row">
+          <div class="yellow-line"></div>
+          <div class="socials">
+            <ul class="footer-social">
+              <li>
+                <a class="social-button social-facebook" href="#">Facebook</a>
+              </li>
+              <li>
+                <a class="social-button social-instagram" href="#">Instagram</a>
+              </li>
+              <li>
+                <a class="social-button social-twitter" href="#">Twitter</a>
+              </li>
+            </ul>
+          </div>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
+        </div>
+        <!--//Third Line-->
+      </div>
+    </footer>
   </body>
 </html>
