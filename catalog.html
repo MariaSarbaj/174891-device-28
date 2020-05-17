@@ -102,18 +102,19 @@
           </div>
           <!--//Filter Title-->
 
-          <form class="filter-form">
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
             <div class="filter-form-price">
-              <fieldset>
-                <legend class="filter-form-title">Стоимость</legend>
-                <label class="visually-hidden" for="price">Стоимость</label>
-                <input type="range" id="price" name="price" min="0" max="5000">
-              </fieldset>
+              <section>
+                <h3 class="filter-form-title">Стоимость</h3>
+                <div class="filter-form-price__line"></div>
+                <button class="filter-form-price__min" type="button"></button>
+                <button class="filter-form-price__max" type="button"></button>
+              </section>
             </div>
 
             <div class="filter-form-color">
-              <fieldset>
-                <legend class="filter-form-title">Стоимость</legend>
+              <section>
+                <h3 class="filter-form-title">Стоимость</h3>
                 <!--black-->
                 <input type="checkbox" id="black" name="black" checked>
                 <label class="filter-form-color__label" for="black">Черный</label>
@@ -134,21 +135,21 @@
                 <input type="checkbox" id="pink" name="pink">
                 <label class="filter-form-color__label" for="pink">Розовый</label>
                 <!--//white-->
-              </fieldset>
+              </section>
             </div>
 
             <div class="filter-form-bluetooth">
-              <fieldset>
-                <legend class="filter-form-title">Стоимость</legend>
+              <section>
+                <h3 class="filter-form-title">Стоимость</h3>
                 <!--yes-->
-                <input type="radio" id="yes" name="yes" checked>
+                <input type="radio" id="yes" name="bluetooth-choice" value="yes" checked>
                 <label class="filter-form-bluetooth__yes" for="yes">Есть</label>
                 <!--//yes-->
                 <!--no-->
-                <input type="radio" id="no" name="no">
+                <input type="radio" id="no" name="bluetooth-choice" value="no">
                 <label class="filter-form-bluetooth__no" for="no">Нет</label>
                 <!--//no-->
-              </fieldset>
+              </section>
             </div>
 
             <button class="filter-form__show" type="submit">показать</button>
@@ -169,8 +170,8 @@
                 <a class="result-title-sort__item" href="">По популярности</a>
               </li>
             </ul>
-            <button class="result-title-sort__btn--down" type="submit"></button>
-            <button class="result-title-sort__btn--up" type="submit"></button>
+            <a class="result-title-down" href="#"></a>
+            <a class="result-title-up" href="#"></a>
           </div>
 
           <div class="result-slider">
@@ -180,8 +181,8 @@
                 <h3 class="device-card-desc__title">Любительская селфи-палка</h3>
                 <span class="device-card-desc__price">500 руб.</span>
               </div>
-              <div class="visually-hidden new">new</div>
-              <div class="visually-hidden device-card--hover">
+              <div class="device-card-new">new</div>
+              <div class="device-card-hover">
                 <button class="put-in-cart">в корзину</button>
                 <button class="compare">Добавить к сравнению</button>
               </div>
@@ -192,8 +193,8 @@
                 <h3 class="device-card-desc__title">Профессиональная селфи-палка</h3>
                 <span class="device-card-desc__price">1&nbsp;500 руб.</span>
               </div>
-              <div class="visually-hidden new">new</div>
-              <div class="visually-hidden device-card--hover">
+              <div class="device-card-new">new</div>
+              <div class="device-card-hover">
                 <button class="put-in-cart">в корзину</button>
                 <button class="compare">Добавить к сравнению</button>
               </div>
@@ -204,8 +205,8 @@
                 <h3 class="device-card-desc__title">Непотопляемая селфи-палка</h3>
                 <span class="device-card-desc__price">2&nbsp;500 руб.</span>
               </div>
-              <div class="visually-hidden new">new</div>
-              <div class="visually-hidden device-card--hover">
+              <div class="device-card-new">new</div>
+              <div class="device-card-hover">
                 <button class="put-in-cart">в корзину</button>
                 <button class="compare">Добавить к сравнению</button>
               </div>
@@ -216,8 +217,8 @@
                 <h3 class="device-card-desc__title">Селфи-палка «Следуй за мной»</h3>
                 <span class="device-card-desc__price">4&nbsp;900 руб.</span>
               </div>
-              <div class="visually-hidden new">new</div>
-              <div class="visually-hidden device-card--hover">
+              <div class="device-card-new">new</div>
+              <div class="device-card-hover">
                 <button class="put-in-cart">в корзину</button>
                 <button class="compare">Добавить к сравнению</button>
               </div>
@@ -256,14 +257,14 @@
         <div class="footer-links-wrapper">
           <ul class="user-nav user-nav--footer">
             <li>
-              <a class="user-nav__item--footer user-nav__item--user">Валентин Петухов</a>
+              <a class="user-nav__item user-nav__item--user">Валентин Петухов</a>
               <button class="submit-btn" type="submit">Выйти</button>
             </li>
             <li>
-              <a class="user-nav__item--footer user-nav__item--compare">Сравнить</a>
+              <a class="user-nav__item user-nav__item--compare">Сравнить</a>
             </li>
             <li>
-              <a class="user-nav__item--footer user-nav__item--cart">Корзина</a>
+              <a class="user-nav__item user-nav__item--cart">Корзина</a>
             </li>
           </ul>
         </div>
