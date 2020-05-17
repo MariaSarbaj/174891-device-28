@@ -91,9 +91,9 @@
                   <caption class="visually-hidden">Характеристики товара</caption>
                   <tbody>
                     <tr>
-                      <td class="slider-item-desc__main">8,5&nbsp;м</td>
-                      <td class="slider-item-desc__main">5&nbsp;кг</td>
-                      <td class="slider-item-desc__main">Карбон</td>
+                      <td class="slider-item-desc__features--main">8,5&nbsp;м</td>
+                      <td class="slider-item-desc__features--main">5&nbsp;кг</td>
+                      <td class="slider-item-desc__features--main">Карбон</td>
                     </tr>
                     <tr>
                       <td>Длина палки</td>
@@ -116,7 +116,7 @@
                   <caption class="visually-hidden">Характеристики товара</caption>
                   <tbody>
                   <tr>
-                    <td class="slider-item-desc__main">48&nbsp;часов</td>
+                    <td class="slider-item-desc__features--main">48&nbsp;часов</td>
                   </tr>
                   <tr>
                     <td>Без подзарядки</td>
@@ -137,8 +137,8 @@
                   <caption class="visually-hidden">Характеристики товара</caption>
                   <tbody>
                   <tr>
-                    <td class="slider-item-desc__main">800&nbsp;м</td>
-                    <td class="slider-item-desc__main">50&nbsp;м</td>
+                    <td class="slider-item-desc__features--main">800&nbsp;м</td>
+                    <td class="slider-item-desc__features--main">50&nbsp;м</td>
                   </tr>
                   <tr>
                     <td>Дальность полета</td>
@@ -157,49 +157,61 @@
           <h2 class="visually-hidden">Наши товары</h2>
           <ul class="items">
             <li>
-              <a class="item-link" href="#">
-                <figure class="item-link__image">
-                  <img src="img/item/item1.png" alt="Виртуальная реальность" width="" height="">
+              <a class="item-link">
+                <figure>
+                  <div class="item-link__image">
+                    <img src="img/item/item1.png" alt="Виртуальная реальность" width="" height="">
+                  </div>
                   <figcaption class="item-link__desc">Виртуальная реальность</figcaption>
                 </figure>
               </a>
             </li>
             <li>
-              <a class="item-link" href="#">
-                <figure class="item-link__image">
-                  <img src="img/item/item2.png" alt="Моноподы для селфи" width="" height="">
+              <a class="item-link">
+                <figure>
+                  <div class="item-link__image">
+                    <img src="img/item/item2.png" alt="Моноподы для селфи" width="" height="">
+                  </div>
                   <figcaption class="item-link__desc">Моноподы для селфи</figcaption>
                 </figure>
               </a>
             </li>
             <li>
-              <a class="item-link" href="#">
-                <figure class="item-link__image">
-                  <img src="img/item/item3.png" alt="Экшн-камеры" width="" height="">
+              <a class="item-link">
+                <figure>
+                  <div class="item-link__image">
+                    <img src="img/item/item3.png" alt="Экшн-камеры" width="" height="">
+                  </div>
                   <figcaption class="item-link__desc">Экшн-камеры</figcaption>
                 </figure>
               </a>
             </li>
             <li>
-              <a class="item-link" href="#">
-                <figure class="item-link__image">
-                  <img src="img/item/item4.png" alt="Фитнес-браслеты" width="" height="">
+              <a class="item-link">
+                <figure>
+                  <div class="item-link__image">
+                    <img src="img/item/item4.png" alt="Фитнес-браслеты" width="" height="">
+                  </div>
                   <figcaption class="item-link__desc">Фитнес-браслеты</figcaption>
                 </figure>
               </a>
             </li>
             <li>
-              <a class="item-link" href="#">
-                <figure class="item-link__image">
-                  <img src="img/item/item5.png" alt="Умные часы" width="" height="">
+              <a class="item-link">
+                <figure>
+                  <div class="item-link__image">
+                    <img src="img/item/item5.png" alt="Умные часы" width="" height="">
+                  </div>
                   <figcaption class="item-link__desc">Умные часы</figcaption>
                 </figure>
               </a>
             </li>
             <li>
-              <a class="item-link" href="#">
-                <figure class="item-link__image">
-                  <img src="img/item/item6.png" alt="Квадрокоптеры" width="" height="">
+              <a class="item-link">
+                <figure>
+                  <div class="item-link__image">
+                    <img src="img/item/item6.png" alt="Квадрокоптеры" width="" height="">
+                  </div>
                   <figcaption class="item-link__desc">Квадрокоптеры</figcaption>
                 </figure>
               </a>
@@ -211,12 +223,12 @@
         <!--Features-->
         <section class="features">
           <div class="features-toggle-wrapper">
-            <a class="features__toggle" href="#delivery" >доставка</a>
-            <a class="features__toggle" href="#guarantee" >гарантия</a>
-            <a class="features__toggle" href="#credit" >кредит</a>
+            <a href="#delivery" class="features__toggle">доставка</a>
+            <a href="#guarantee" class="features__toggle">гарантия</a>
+            <a href="#credit" class="features__toggle">кредит</a>
           </div>
           <div class="features-content-box-wrapper">
-            <div class="features-content-box" id="delivery">
+            <div class="features-content__box" id="delivery">
               <h2 class="section-title">Доставка</h2>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                 заработаем, поднимая его на ваш этаж.</p>
@@ -230,22 +242,22 @@
           <h2 class="visually-hidden">Наши партнеры</h2>
           <ul class="brands-list">
             <li>
-              <a class="brand-item" href="#">
+              <a class="brand-item">
                 <img src="img/brand/brand1.png" alt="DJI" width="" height="">
               </a>
             </li>
             <li>
-              <a class="brand-item" href="#">
+              <a class="brand-item">
                 <img src="img/brand/brand2.png" alt="SPGadjets" width="" height="">
               </a>
             </li>
             <li>
-              <a class="brand-item" href="#">
+              <a class="brand-item">
                 <img src="img/brand/brand3.png" alt="GoPro" width="" height="">
               </a>
             </li>
             <li>
-              <a class="brand-item" href="#">
+              <a class="brand-item">
                 <img src="img/brand/brand4.png" alt="Vive" width="" height="">
               </a>
             </li>
@@ -261,9 +273,9 @@
           <p class="about-desc">Мы можем доставить ваш товар в самые отдаленные точки
             России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="about-partners">
-            <li class="about-partners__item">Деловые линии</li>
-            <li class="about-partners__item">Автотрейдинг</li>
-            <li class="about-partners__item">ЖелДорЭкспедиция</li>
+            <li class="about-partner__item">Деловые линии</li>
+            <li class="about-partner__item">Автотрейдинг</li>
+            <li class="about-partner__item">ЖелДорЭкспедиция</li>
           </ul>
           <a class="link" href="#">подробнее о нас</a>
         </section>
@@ -295,13 +307,13 @@
           <div class="footer-links-wrapper">
             <ul class="user-nav user-nav--footer">
               <li>
-                <a class="user-nav__item user-nav__item--user">Войти</a>
+                <a class="user-nav__item--footer user-nav__item--user">Войти</a>
               </li>
               <li>
-                <a class="user-nav__item user-nav__item--compare">Сравнить</a>
+                <a class="user-nav__item--footer user-nav__item--compare">Сравнить</a>
               </li>
               <li>
-                <a class="user-nav__item user-nav__item--cart">Корзина</a>
+                <a class="user-nav__item--footer user-nav__item--cart">Корзина</a>
               </li>
             </ul>
           </div>
