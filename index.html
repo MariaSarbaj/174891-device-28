@@ -8,32 +8,33 @@
     <header class="header">
       <div class="container">
         <!--Logo-->
-        <a class="logo header-logo">Device</a>
+        <a class="logo header-logo" href="#" aria-label="Интернет магазин гаджетов Device">Device</a>
         <!--//Logo-->
 
         <!--User Links-->
         <div class="user-links-wrapper">
-          <form class="search-form" action="" method="get">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <label class="visually-hidden" for="search-form__input">Поиск по сайту</label>
             <input type="search" class="search-form__input" name="search-input" id="search-form__input" placeholder="Поиск по сайту">
+            <button type="submit">Найти</button>
           </form>
           <ul class="user-nav">
             <li>
-              <a class="user-nav__item user-nav__item--user">Войти</a>
+              <a class="user-nav__item user-nav__item--user" href="#">Войти</a>
             </li>
             <li>
-              <a class="user-nav__item user-nav__item--compare">Сравнить</a>
+              <a class="user-nav__item user-nav__item--compare" href="#">Сравнить</a>
             </li>
             <li>
-              <a class="user-nav__item user-nav__item--cart">Корзина</a>
+              <a class="user-nav__item user-nav__item--cart" href="#">Корзина</a>
             </li>
           </ul>
         </div>
         <!--//Header Links-->
 
         <!--Header Nav-->
-        <nav class="header-nav">
-          <ul class="catalog-list">
+        <nav class="header-nav" aria-label="Меню сайта">
+          <ul class="catalog-list" aria-label="Каталог товаров">
             <li>
               <a class="catalog-list__link" href="catalog.html">каталог товаров</a>
               <ul class="catalog-items">
@@ -86,7 +87,7 @@
                 <span class="slider-item-desc__slogan">Делай селфи, как Бен Стиллер!</span>
                 <p class="slider-item-desc__text">Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                <a class="link" href="#">подробнее</a>
+                <a class="link" href="#" aria-label="Узнать о селфи-палке">подробнее</a>
                 <table class="slider-item-desc__features">
                   <caption class="visually-hidden">Характеристики товара</caption>
                   <tbody>
@@ -111,7 +112,7 @@
                 <span class="slider-item-desc__slogan">Худеем правильно!</span>
                 <p class="slider-item-desc__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
                   не пропускать занятия и соблюдать диету.</p>
-                <a class="link" href="#">подробнее</a>
+                <a class="link" href="#" aria-label="Узнать о фитнес-браслете">подробнее</a>
                 <table class="slider-item-desc__features">
                   <caption class="visually-hidden">Характеристики товара</caption>
                   <tbody>
@@ -132,7 +133,7 @@
                 <span class="slider-item-desc__slogan">Порхает как бабочка, жалит как пчела!</span>
                 <p class="slider-item-desc__text">Мотивирующие фитнес-браслеты помогут найти в себе силы
                   не пропускать занятия и соблюдать диету.</p>
-                <a class="link" href="#">подробнее</a>
+                <a class="link" href="#" aria-label="Узнать о квадрокопторе">подробнее</a>
                 <table class="slider-item-desc__features">
                   <caption class="visually-hidden">Характеристики товара</caption>
                   <tbody>
@@ -211,9 +212,9 @@
         <!--Features-->
         <section class="features">
           <div class="features-toggle-wrapper">
-            <a class="features__toggle" href="#delivery" >доставка</a>
-            <a class="features__toggle" href="#guarantee" >гарантия</a>
-            <a class="features__toggle" href="#credit" >кредит</a>
+            <a class="features__toggle" href="#delivery">доставка</a>
+            <a class="features__toggle" href="#guarantee">гарантия</a>
+            <a class="features__toggle" href="#credit">кредит</a>
           </div>
           <div class="features-content-box-wrapper">
             <div class="features-content-box" id="delivery">
@@ -288,20 +289,20 @@
         <!--First Line-->
         <div class="row">
           <!--Logo-->
-          <a class="logo footer-logo">Device</a>
+          <a class="logo footer-logo" href="#" aria-label="Интернет магазин гаджетов Device">Device</a>
           <!--//Logo-->
 
           <!--Footer Links-->
           <div class="footer-links-wrapper">
             <ul class="user-nav user-nav--footer">
               <li>
-                <a class="user-nav__item user-nav__item--user">Войти</a>
+                <a class="user-nav__item user-nav__item--user" href="#">Войти</a>
               </li>
               <li>
-                <a class="user-nav__item user-nav__item--compare">Сравнить</a>
+                <a class="user-nav__item user-nav__item--compare" href="#">Сравнить</a>
               </li>
               <li>
-                <a class="user-nav__item user-nav__item--cart">Корзина</a>
+                <a class="user-nav__item user-nav__item--cart" href="#">Корзина</a>
               </li>
             </ul>
           </div>
@@ -350,5 +351,32 @@
         <!--//Third Line-->
       </div>
     </footer>
+
+    <!--Pop-Up Form-->
+    <section class="popUpForm">
+      <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-form-wrapper">
+          <label class="visually-hidden" for="name__input">Ваше имя:</label>
+          <input type="text" class="write-form__input" name="name-input" id="name__input" placeholder="Имя Фамилия">
+        </div>
+        <div class="write-form-wrapper">
+          <label class="visually-hidden" for="email__input">Ваш e-mail:</label>
+          <input type="email" class="write-form__input" name="email-input" id="email__input" placeholder="email@example.com">
+        </div>
+        <div class="write-form-wrapper">
+          <label class="visually-hidden" for="text__input">Текст письма:</label>
+          <textarea class="write-form__input write-form__input--textarea" name="text-input" id="text__input">В свободной форме</textarea>
+        </div>
+        <button type="submit">отправить</button>
+      </form>
+      <button type="button"></button>
+    </section>
+    <!--//Pop-Up Form-->
+
+    <!--Pop-Up Map-->
+    <section class="mapForm">
+      <!-- google or yandex map-->
+    </section>
+    <!--//Pop-Up Map-->
   </body>
 </html>
