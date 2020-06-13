@@ -965,7 +965,6 @@ img {
   width: 32px;
   height: 32px;
   margin-right: 20px;
-  font-size: 0;
   opacity: 0.3;
 }
 
@@ -1149,6 +1148,7 @@ img {
   background-color: transparent;
   border: none;
   opacity: 0.3;
+  cursor:pointer
 }
 
 .submit-btn:hover {
@@ -1587,6 +1587,7 @@ img {
   border: none;
   background-color: transparent;
   max-width: 60px;
+  -moz-appearance: textfield;
 }
 
 .filter-form-color {
@@ -1645,11 +1646,24 @@ input[type="radio"]:focus {
   outline: none;
 }
 
+input[type="checkbox"]:focus + .filter-form-color__checkbox,
+input[type="radio"]:focus + .filter-form-bluetooth__radio {
+  outline: 1px dotted var(--basic-black);
+  outline-offset: 1px;
+}
+
 input[type="checkbox"]:disabled + .filter-form-color__checkbox,
 input[type="checkbox"]:disabled:checked + .filter-form-color__checkbox,
 input[type="radio"]:disabled + .filter-form-bluetooth__radio,
 input[type="radio"]:disabled:checked + .filter-form-bluetooth__radio {
   opacity: 0.25;
+}
+
+input[type="checkbox"]:disabled:checked:active + .filter-form-color__checkbox,
+input[type="radio"]:disabled:checked:active + .filter-form-bluetooth__radio {
+  background-image: url("../img/icons/check-on.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 input[type="checkbox"]:hover + .filter-form-color__checkbox,
@@ -1726,6 +1740,7 @@ input[type="radio"]:checked:active + .filter-form-bluetooth__radio {
 .user-nav--footer .submit-btn {
   color: var(--basic-white);
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .user-nav--footer .submit-btn:hover {
