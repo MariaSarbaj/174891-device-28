@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="body-wrapper">
@@ -452,13 +452,13 @@
         <section class="features">
           <div class="container">
             <div class="features-toggle-wrapper">
-              <a class="features__toggle features__toggle--active">
+              <a class="features__toggle features__toggle--active" href="#">
                 <span class="link">доставка</span>
               </a>
-              <a class="features__toggle">
+              <a class="features__toggle" href="#">
                 <span class="link">гарантия</span>
               </a>
-              <a class="features__toggle">
+              <a class="features__toggle" href="#">
                 <span class="link">кредит</span>
               </a>
             </div>
@@ -492,26 +492,22 @@
             <ul class="brands-list">
               <li>
                 <a class="brand-item" href="#">
-                  <img src="img/brand/brand1.png" alt="DJI" width="260" height="100">
-                  <img class="brand-item--color" src="img/brand/brand1-color.png" alt="DJI" width="260" height="100">
+                  <img src="img/brand/brand1-color.png" alt="DJI" width="260" height="100">
                 </a>
               </li>
               <li>
                 <a class="brand-item" href="#">
-                  <img src="img/brand/brand2.png" alt="SPGadjets" width="260" height="100">
-                  <img class="brand-item--color" src="img/brand/brand2-color.png" alt="SPGadjets" width="260" height="100">
+                  <img src="img/brand/brand2-color.png" alt="SPGadjets" width="260" height="100">
                 </a>
               </li>
               <li>
                 <a class="brand-item" href="#">
-                  <img src="img/brand/brand3.png" alt="GoPro" width="260" height="100">
-                  <img class="brand-item--color" src="img/brand/brand3-color.png" alt="GoPro" width="260" height="100">
+                  <img src="img/brand/brand3-color.png" alt="GoPro" width="260" height="100">
                 </a>
               </li>
               <li>
                 <a class="brand-item" href="#">
-                  <img src="img/brand/brand4.png" alt="Vive" width="260" height="100">
-                  <img class="brand-item--color" src="img/brand/brand4-color.png" alt="Vive" width="260" height="100">
+                  <img src="img/brand/brand4-color.png" alt="Vive" width="260" height="100">
                 </a>
               </li>
             </ul>
@@ -542,10 +538,10 @@
               <h2 class="section-title">Контакты</h2>
               <p class="about-desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
                 проверить работоспособность покупки. Всякое бывает.</p>
-              <a class="map popup-link" href="#popUp__map">
+              <a class="map popup-link" href="modalmap.html">
                 <img src="img/map/map.png" alt="Карта проезда" width="560" height="222">
               </a>
-              <a class="link popup-link" href="#popUp__form">напишите нам</a>
+              <a class="link popup-link" href="modalform.html">напишите нам</a>
             </section>
             <!--//Contacts-->
           </div>
@@ -661,14 +657,14 @@
       </footer>
 
       <!--Pop-Up Form-->
-      <section id="popUp__form" class="popUp popUp__form">
+      <section id="modalform" class="popUp popUp__form">
         <div class="popUp__body">
           <div class="popUp__content">
             <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="write-form-container">
                 <div class="write-form-wrapper">
                   <label for="name__input">Ваше имя:</label>
-                  <input type="text" class="write-form__input" name="name-input" id="name__input" placeholder="Имя Фамилия">
+                  <input type="text" class="write-form__input " name="name-input" id="name__input" placeholder="Имя Фамилия" pattern="A-Z,a-z">
                 </div>
                 <div class="write-form-wrapper">
                   <label for="email__input">Ваш e-mail:</label>
@@ -677,7 +673,7 @@
               </div>
               <div class="write-form-wrapper">
                 <label for="text__input">Текст письма:</label>
-                <textarea class="write-form__input write-form__input--textarea" name="text-input" id="text__input">В свободной форме</textarea>
+                <textarea class="write-form__input write-form__input--textarea" name="text-input" id="text__input" placeholder="В свободной форме"></textarea>
               </div>
               <button class="link" type="submit">отправить</button>
             </form>
@@ -688,16 +684,15 @@
       <!--//Pop-Up Form-->
 
       <!--Pop-Up Map-->
-      <section id="popUp__map" class="popUp popUp__map">
+      <section id="modalmap" class="popUp popUp__map">
         <div class="popUp__body">
           <div class="popUp__content popUp__content--map">
-            <img src="img/map/map-big.png" alt="Карта проезда">
-            <a href="#" class="popup__close">закрыть</a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473704!2d37.5274293160995!3d55.68703400452975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sil!4v1592149158888!5m2!1sru!2sil" width="994" height="553" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            <a href="#" class="popup__close">закрыть</a>
           </div>
         </div>
       </section>
       <!--//Pop-Up Map-->
     </div>
-    <script src="js/script.js" type="application/javascript" defer></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>

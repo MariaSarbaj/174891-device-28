@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 /* Fonts */
 
 @font-face{
@@ -131,6 +138,7 @@ img {
 .page-body {
   min-height: 100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
@@ -236,23 +244,28 @@ img {
   opacity: 1;
 }
 
-.search-form button {
+.search-form__btn {
   width: 84px;
   height: 50px;
   background-color: transparent;
   border: 2px solid var(--basic-black);
   font-weight: 300;
   text-transform: uppercase;
+  display: none;
 }
 
-.search-form button:hover {
+.search-form__btn:hover {
   background-color: var(--basic-black);
   color: var(--basic-white);
 }
 
-.search-form button:active {
+.search-form__btn:active {
   background-color: var(--basic-black);
   color: rgba(255, 255, 255, 0.3);
+}
+
+.search-form__btn--focus {
+  display: inline-block;
 }
 
 .user-nav {
@@ -293,27 +306,6 @@ img {
 .user-nav__item svg {
   margin-right: 11px;
 }
-
-/*.user-nav__item--user {
-  padding-left: 24px;
-  background-image: url("../img/icons/user.svg");
-  background-position: left 20px;
-  background-repeat: no-repeat;
-}
-
-.user-nav__item--compare {
-  padding-left: 26px;
-  background-image: url("../img/icons/compare.svg");
-  background-position: left 21px;
-  background-repeat: no-repeat;
-}
-
-.user-nav__item--cart {
-  padding-left: 22px;
-  background-image: url("../img/icons/cart.svg");
-  background-position: left 19px;
-  background-repeat: no-repeat;
-}*/
 
 .header-nav {
   display: flex;
@@ -394,13 +386,17 @@ img {
   width: 100%;
   list-style: none;
   padding: 12px 60px 50px 60px;
-  display: flex;
+  display: none;
   text-transform: none;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   letter-spacing: normal;
   z-index: 1;
+}
+
+.catalog-items--open {
+  display: flex;
 }
 
 .catalog-items--column {
@@ -430,9 +426,6 @@ img {
   background-image: linear-gradient(var(--special-yellow-light) 160px, transparent 160px);
   padding-top: 17px;
   position: relative;
-}
-
-.slider-wrappper {
 }
 
 .slider-item {
@@ -571,6 +564,7 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  -moz-column-gap: 40px;
   column-gap: 40px;
 }
 
@@ -755,18 +749,19 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.brand-item .brand-item--color {
-  display: none;
+.brand-item {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  opacity: 0.2;
 }
 
-.brand-item:hover img {
-  display: none;
-}
-
-.brand-item:hover .brand-item--color {
-  display: block;
+.brand-item:hover {
+  opacity: 1;
+  -webkit-filter: none;
+  filter: none;
 }
 
 /* About & Contacts */
@@ -1085,10 +1080,6 @@ img {
   opacity: 0.3;
 }
 
-.write-form {
-
-}
-
 .write-form-container {
   display: flex;
   justify-content: space-between;
@@ -1117,6 +1108,16 @@ img {
   color: var(--basic-black);
 }
 
+.write-form__input:invalid {
+  background-color: #F6DADA;
+  color: rgba(0, 0, 0, 0.4);
+  border: 2px solid transparent;
+}
+
+.write-form__input:invalid:focus {
+  border: 2px solid transparent;
+}
+
 .write-form__input--textarea {
   width: auto;
   min-height: 167px;
@@ -1136,8 +1137,6 @@ img {
   background-color: transparent;
   line-height: initial;
 }
-
-
 
 /* Catalog */
 
@@ -1403,11 +1402,10 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 0;
 }
 
 .put-in-cart {
@@ -1437,11 +1435,15 @@ img {
 }
 
 .device-card:hover .device-card-hover {
-  opacity: 1;
+  display: flex;
 }
 
 .device-card:hover img {
   opacity: 0.7;
+}
+
+.device-card:focus-within .device-card-hover {
+  display: flex;
 }
 
 .result-controls {
@@ -1455,6 +1457,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;

@@ -20,20 +20,18 @@ let catalogItems = document.querySelector('.catalog-items');
 let catalogLink = document.querySelector('.catalog-list__link');
 let catalogItemLastChild = document.querySelector('.blur');
 
-catalogItems.style.display = 'none';
-
 catalogLink.addEventListener('mousedown', function (event) {
-  catalogItems.style.display = 'flex'
+  catalogItems.classList.add('catalog-items--open');
 })
 
 catalogLink.addEventListener('focus', function (event) {
-  catalogItems.style.display = 'flex'
+  catalogItems.classList.add('catalog-items--open');
 })
 
 catalogItems.addEventListener('mouseleave', function (event) {
-  catalogItems.style.display = 'none'
+  catalogItems.classList.remove('catalog-items--open');
 })
 
 catalogItemLastChild.addEventListener('blur', function (event) {
-  catalogItems.style.display = 'none';
+  catalogItems.classList.remove('catalog-items--open');
 })
