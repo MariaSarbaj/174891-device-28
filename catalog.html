@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <title>Моноподы для селфи</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize-min.css">
+  <link rel="stylesheet" href="css/main-min.css">
 </head>
 <body class="page-body">
   <header class="header">
-    <div class="container header-wrapper">
+    <div class="container header-wrapper header-wrapper--catalog">
       <!--Logo-->
       <a class="logo header-logo" href="index.html" aria-label="Интернет магазин гаджетов Device">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35" width="163" height="35">
@@ -34,35 +34,16 @@
           <input type="search" class="search-form__input" name="search-input" id="search-form__input" placeholder="Поиск по сайту">
           <button class="search-form__btn" type="submit">Найти</button>
         </form>
-        <ul class="user-nav">
+        <ul class="user-nav user-nav--catalog">
           <li>
-            <a class="user-nav__item user-nav__item--user" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
-                <path fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972
-                    3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
-              </svg>
-              Валентин Петухов</a>
+            <a class="user-nav__item user-nav__item--user" href="#">Валентин Петухов</a>
             <a class="submit-btn" href="#">Выйти</a>
           </li>
           <li>
-            <a class="user-nav__item user-nav__item--compare" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
-                <path d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
-              </svg>
-              Сравнить</a>
+            <a class="user-nav__item user-nav__item--compare" href="#">Сравнить</a>
           </li>
           <li>
-            <a class="user-nav__item user-nav__item--cart" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-                <path d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594
-                    0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43
-                    0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0
-                    1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/>
-                <path d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0
-                    1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0
-                    6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
-              </svg>
-              Корзина</a>
+            <a class="user-nav__item user-nav__item--cart" href="#">Корзина</a>
           </li>
         </ul>
       </div>
@@ -240,7 +221,7 @@
 
               <div class="filter-form-bluetooth">
                 <section>
-                  <h3 class="filter-form-title">Стоимость</h3>
+                  <h3 class="filter-form-title">Bluetouth</h3>
                   <!--yes-->
                   <label class="filter-form-bluetooth__yes" for="yes">
                     <input type="radio" id="yes" name="bluetooth-choice" value="yes" checked>
@@ -292,7 +273,7 @@
                   <button class="compare">Добавить к сравнению</button>
                 </div>
               </article>
-              <article class="device-card">
+              <article class="device-card device-card--row">
                 <img src="img/monopod/item3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
                 <div class="device-card-desc">
                   <a class="device-card-link" href="#">
@@ -306,7 +287,7 @@
                   <button class="compare">Добавить к сравнению</button>
                 </div>
               </article>
-              <article class="device-card">
+              <article class="device-card device-card--row">
                 <img src="img/monopod/item4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
                 <div class="device-card-desc">
                   <a class="device-card-link" href="#">
@@ -343,7 +324,7 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer--catalog">
     <div class="container">
       <!--First Line-->
       <div class="row">
@@ -368,8 +349,8 @@
         <div class="footer-links-wrapper">
           <ul class="user-nav user-nav--footer">
             <li>
-              <a class="user-nav__item user-nav__item--user" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+              <a class="user-nav__item user-nav__item--footer user-nav__item--catalog" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 13 12">
                   <path class="user-nav__item--path" fill="#272525" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972
                     3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
                 </svg>
@@ -377,14 +358,14 @@
               <a class="submit-btn" href="#">Выйти</a>
             </li>
             <li>
-              <a class="user-nav__item user-nav__item--compare" href="#">
+              <a class="user-nav__item user-nav__item--compare user-nav__item--catalog" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
                   <path class="user-nav__item--path" d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
                 </svg>
                 Сравнить</a>
             </li>
             <li>
-              <a class="user-nav__item user-nav__item--cart" href="#">
+              <a class="user-nav__item user-nav__item--cart user-nav__item--catalog" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
                   <path class="user-nav__item--path" d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594
                     0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43
@@ -451,6 +432,6 @@
       <!--//Third Line-->
     </div>
   </footer>
-  <script src="js/catalog.js" defer></script>
+  <script src="js/catalog-min.js" defer></script>
 </body>
 </html>
