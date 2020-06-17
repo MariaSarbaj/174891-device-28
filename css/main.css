@@ -1118,7 +1118,7 @@ img {
   background-color: transparent;
 }
 
-.popUp__content--map {
+.popUp__content--map iframe {
   border: none;
 }
 
