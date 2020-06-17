@@ -113,7 +113,7 @@
           <a class="breadcrumbs__item" href="#">Главная</a>
         </li>
         <li class="breadcrumbs__item--after">
-          <a class="breadcrumbs__item">Каталог товаров</a>
+          <a class="breadcrumbs__item" href="#">Каталог товаров</a>
         </li>
         <li>
           <a class="breadcrumbs__item" href="#">Моноподы для селфи</a>
@@ -147,8 +147,12 @@
                 <a class="result-title-sort__item" href="">По популярности</a>
               </li>
             </ul>
-            <a class="result-title-up" href="#"></a>
-            <a class="result-title-down" href="#"></a>
+            <a class="result-title-up" href="#">
+              <span class="visually-hidden">По уменьшению</span>
+            </a>
+            <a class="result-title-down" href="#">
+              <span class="visually-hidden">По увеличению</span>
+            </a>
           </div>
         </div>
       </div>
@@ -183,35 +187,35 @@
                   <h3 class="filter-form-title">Цвет</h3>
                   <!--black-->
                   <label class="filter-form-color__label" for="black">
-                    <input type="checkbox" id="black" name="black" checked>
+                    <input class="checkbox" type="checkbox" id="black" name="black" checked>
                     <span class="filter-form-color__checkbox"></span>
                     Черный
                   </label>
                   <!--//black-->
                   <!--white-->
                   <label class="filter-form-color__label" for="white">
-                    <input type="checkbox" id="white" name="white">
+                    <input class="checkbox" type="checkbox" id="white" name="white">
                     <span class="filter-form-color__checkbox"></span>
                     Белый
                   </label>
                   <!--//white-->
                   <!--blue-->
                   <label class="filter-form-color__label" for="blue">
-                    <input type="checkbox" id="blue" name="blue" checked>
+                    <input class="checkbox" type="checkbox" id="blue" name="blue" checked>
                     <span class="filter-form-color__checkbox"></span>
                     Синий
                   </label>
                   <!--//blue-->
                   <!--red-->
                   <label class="filter-form-color__label" for="red">
-                    <input type="checkbox" id="red" name="red" checked>
+                    <input class="checkbox" type="checkbox" id="red" name="red" checked>
                     <span class="filter-form-color__checkbox"></span>
                     Красный
                   </label>
                   <!--//red-->
                   <!--pink-->
                   <label class="filter-form-color__label" for="pink">
-                    <input type="checkbox" id="pink" name="pink">
+                    <input class="checkbox" type="checkbox" id="pink" name="pink">
                     <span class="filter-form-color__checkbox"></span>
                     Розовый
                   </label>
@@ -224,14 +228,14 @@
                   <h3 class="filter-form-title">Bluetouth</h3>
                   <!--yes-->
                   <label class="filter-form-bluetooth__yes" for="yes">
-                    <input type="radio" id="yes" name="bluetooth-choice" value="yes" checked>
+                    <input class="radio" type="radio" id="yes" name="bluetooth-choice" value="yes" checked>
                     <span class="filter-form-bluetooth__radio"></span>
                     Есть
                   </label>
                   <!--//yes-->
                   <!--no-->
                   <label class="filter-form-bluetooth__no" for="no">
-                    <input type="radio" id="no" name="bluetooth-choice" value="no">
+                    <input class="radio" type="radio" id="no" name="bluetooth-choice" value="no">
                     <span class="filter-form-bluetooth__radio"></span>
                     Нет
                   </label>

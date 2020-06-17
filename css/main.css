@@ -92,6 +92,7 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+  overflow: hidden;
 }
 
 .container {
@@ -553,7 +554,7 @@ img {
   width: 72px;
   position: absolute;
   right: 88px;
-  top: 355px;
+  bottom: 144px;
   display: flex;
   justify-content: space-between;
 }
@@ -1118,7 +1119,6 @@ img {
   right: 20px;
   display: inline-block;
   background-image: url("../img/icons/modal-close.svg");
-  font-size: 0;
   opacity: 0.7;
 }
 
@@ -1438,12 +1438,11 @@ img {
 
 .device-card-desc__price {
   margin-top: -1px;
-  margin-right: -7px;
-  min-width: 85px;
+  min-width: 75px;
   font-family: 'GilroyLight', Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
 }
 
 .device-card-new {
@@ -1515,7 +1514,7 @@ img {
 
 .result-controls {
   margin-bottom: 80px;
-  width: 760px;
+  width: 758px;
   min-height: 67px;
   display: flex;
 }
@@ -1693,8 +1692,8 @@ img {
   margin-bottom: 37px;
 }
 
-.filter-form-color__label input[type="checkbox"],
-.filter-form-bluetooth input[type="radio"]{
+.filter-form-color__label .checkbox,
+.filter-form-bluetooth .radio{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1721,70 +1720,70 @@ img {
   position: absolute;
 }
 
-input[type="checkbox"]:focus,
-input[type="radio"]:focus {
+.checkbox:focus,
+.radio:focus {
   outline: none;
 }
 
-input[type="checkbox"]:focus + .filter-form-color__checkbox,
-input[type="radio"]:focus + .filter-form-bluetooth__radio {
+.checkbox:focus + .filter-form-color__checkbox,
+.radio:focus + .filter-form-bluetooth__radio {
   outline: 1px dotted var(--basic-black);
   outline-offset: 1px;
 }
 
-input[type="checkbox"]:disabled + .filter-form-color__checkbox,
-input[type="checkbox"]:disabled:checked + .filter-form-color__checkbox,
-input[type="radio"]:disabled + .filter-form-bluetooth__radio,
-input[type="radio"]:disabled:checked + .filter-form-bluetooth__radio {
+.checkbox:disabled + .filter-form-color__checkbox,
+.checkbox:disabled:checked + .filter-form-color__checkbox,
+.radio:disabled + .filter-form-bluetooth__radio,
+.radio:disabled:checked + .filter-form-bluetooth__radio {
   opacity: 0.25;
 }
 
-input[type="checkbox"]:disabled:checked:active + .filter-form-color__checkbox,
-input[type="radio"]:disabled:checked:active + .filter-form-bluetooth__radio {
+.checkbox:disabled:checked:active + .filter-form-color__checkbox,
+.radio:disabled:checked:active + .filter-form-bluetooth__radio {
   background-image: url("../img/icons/check-on.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-input[type="checkbox"]:hover + .filter-form-color__checkbox,
-input[type="checkbox"]:checked:hover + .filter-form-color__checkbox,
-input[type="radio"]:hover + .filter-form-bluetooth__radio,
-input[type="radio"]:checked:hover + .filter-form-bluetooth__radio {
+.checkbox:hover + .filter-form-color__checkbox,
+.checkbox:checked:hover + .filter-form-color__checkbox,
+.radio:hover + .filter-form-bluetooth__radio,
+.radio:checked:hover + .filter-form-bluetooth__radio {
   opacity: 0.6;
 }
 
-input[type="checkbox"]:active + .filter-form-color__checkbox {
+.checkbox:active + .filter-form-color__checkbox {
   opacity: 1;
   background-image: url("../img/icons/check-on.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-input[type="radio"]:active + .filter-form-bluetooth__radio {
+.radio:active + .filter-form-bluetooth__radio {
   opacity: 1;
   background-image: url("../img/icons/radio.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-input[type="checkbox"]:checked + .filter-form-color__checkbox {
+.checkbox:checked + .filter-form-color__checkbox {
   background-image: url("../img/icons/check-on.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-input[type="radio"]:checked + .filter-form-bluetooth__radio {
+.radio:checked + .filter-form-bluetooth__radio {
   background-image: url("../img/icons/radio.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-input[type="checkbox"]:checked:active + .filter-form-color__checkbox {
+.checkbox:checked:active + .filter-form-color__checkbox {
   opacity: 0.6;
   background-image: none;
 }
 
-input[type="radio"]:checked:active + .filter-form-bluetooth__radio {
+.radio:checked:active + .filter-form-bluetooth__radio {
   opacity: 1;
   background-image: none;
 }
