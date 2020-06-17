@@ -112,6 +112,7 @@ img {
   padding-right: 39px;
   height: 40px;
   display: inline-block;
+  vertical-align: middle;
   background-image: linear-gradient(transparent 16px, var(--special-yellow-dark) 16px, var(--special-yellow-dark) 24px, transparent 24px);
   font-family: 'GilroyExtraBold', Arial, sans-serif;
   font-size: 18px;
@@ -267,6 +268,7 @@ img {
 
 .search-form__btn--focus {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .user-nav {
@@ -298,6 +300,7 @@ img {
   display: inline-block;
   color: var(--basic-black);
   line-height: 50px;
+  vertical-align: middle;
 }
 
 .user-nav__item:hover {
@@ -1015,6 +1018,7 @@ img {
   display: inline-block;
   vertical-align: middle;
   opacity: 0.3;
+  vertical-align: middle;
 }
 
 .social-button:last-child {
@@ -1049,6 +1053,7 @@ img {
   width: 27px;
   height: 34px;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .developer:hover .developer__logo {
@@ -1113,6 +1118,10 @@ img {
   background-color: transparent;
 }
 
+.popUp__content--map {
+  border: none;
+}
+
 .popup__close {
   width: 55px;
   height: 55px;
@@ -1120,6 +1129,7 @@ img {
   top: 20px;
   right: 20px;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../img/icons/modal-close.svg");
   opacity: 0.7;
 }
@@ -1354,6 +1364,7 @@ img {
   width: 18px;
   height: 18px;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../img/icons/icon-up-dir.svg");
   background-repeat: no-repeat;
   background-size: initial;
@@ -1367,6 +1378,7 @@ img {
   width: 18px;
   height: 18px;
   display: inline-block;
+  vertical-align: middle;
   background-image: url("../img/icons/icon-down-dir.svg");
   background-repeat: no-repeat;
   background-size: initial;
