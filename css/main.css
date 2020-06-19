@@ -373,11 +373,11 @@ img {
 
 .catalog-list__link::after {
   content: '';
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
   position: absolute;
   right: -2px;
-  top: 4px;
+  top: 3px;
   display: block;
   background-image: url("../img/icons/plus.svg");
   background-repeat: no-repeat;
@@ -1018,7 +1018,6 @@ img {
   display: inline-block;
   vertical-align: middle;
   opacity: 0.3;
-  vertical-align: middle;
 }
 
 .social-button:last-child {
@@ -1158,23 +1157,6 @@ img {
   flex-direction: column;
 }
 
-.write-form__input {
-  padding: 17px 0 17px 20px;
-  width: 360px;
-  border: 2px solid transparent;
-  background-color: var(--special-grey);
-}
-
-.write-form__input:hover {
-  background-color: var(--special-grey-dark);
-}
-
-.write-form__input:focus {
-  border: 2px solid var(--special-yellow-light);
-  background-color: transparent;
-  color: var(--basic-black);
-}
-
 .write-form__input:invalid {
   border: 2px solid transparent;
   background-color: #F6DADA;
@@ -1185,7 +1167,28 @@ img {
   border: 2px solid transparent;
 }
 
-.write-form__input--textarea {
+.write-form__input,
+.write-form__input:required {
+  padding: 17px 0 17px 20px;
+  width: 360px;
+  border: 2px solid transparent;
+  background-color: var(--special-grey);
+}
+
+.write-form__input:hover,
+.write-form__input:hover:required {
+  background-color: var(--special-grey-dark);
+}
+
+.write-form__input:focus,
+.write-form__input:focus:required {
+  border: 2px solid var(--special-yellow-light);
+  background-color: transparent;
+  color: var(--basic-black);
+}
+
+.write-form__input--textarea,
+.write-form__input--textarea:required {
   width: auto;
   min-height: 167px;
 }
@@ -1215,6 +1218,10 @@ img {
   background-color: transparent;
   opacity: 0.3;
   cursor:pointer
+}
+
+.submit-btn.submit-btn--header {
+  vertical-align: middle;
 }
 
 .submit-btn:hover {
