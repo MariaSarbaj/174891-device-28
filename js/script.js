@@ -18,6 +18,8 @@ let catalogItems = document.querySelector('.catalog-items');
 let catalogLink = document.querySelector('.catalog-list__link');
 let catalogItemLastChild = document.querySelector('.blur');
 
+catalogItems.classList.remove('catalog-items--nojs');
+
 catalogLink.addEventListener('mousedown', function (event) {
   catalogItems.classList.add('catalog-items--open');
 })
@@ -121,12 +123,12 @@ if (popupLinks.length > 0) {
   }
 }
 
-const  popupCloseIcon = document.querySelectorAll('.popup__close');
+const  popupCloseIcon = document.querySelectorAll('.popup-content-close');
 if (popupCloseIcon.length > 0) {
   for (let index = 0; index < popupCloseIcon.length; index++) {
     const  el = popupCloseIcon[index];
     el.addEventListener('click', function (e) {
-      popupClose(el.closest('.popUp'));
+      popupClose(el.closest('.popup'));
       e.preventDefault();
     });
   }
@@ -134,7 +136,7 @@ if (popupCloseIcon.length > 0) {
 
 function popupOpen(curentPopup) {
   if (curentPopup && unlock) {
-    const popupActive = document.querySelector('.popUp.open');
+    const popupActive = document.querySelector('.popup.open');
     if (popupActive) {
       popupClose (popupActive, false);
     } else {
@@ -142,8 +144,8 @@ function popupOpen(curentPopup) {
     }
     curentPopup.classList.add('open');
     curentPopup.addEventListener('click', function (e) {
-      if (!e.target.closest('.popUp__content')) {
-        popupClose(e.target.closest('.popUp'));
+      if (!e.target.closest('.popup-content')) {
+        popupClose(e.target.closest('.popup'));
       }
     });
   }
@@ -181,3 +183,29 @@ function bodyUnlock() {
     unlock = true;
   }, timeout );
 }
+
+/* Form Animation */
+
+let writeForm = document.querySelector('.popup-content-form');
+let popupForm = document.getElementById('modal-form');
+let emailInput = document.getElementById('email-input');
+let messageInput = document.getElementById('text-input')
+
+writeForm.addEventListener('submit', function (evt) {
+  if(!emailInput.value) {
+    evt.preventDefault();
+    emailInput.classList.add('error');
+    setTimeout(function () {
+      emailInput.classList.remove('error')}, 500)
+  }
+
+  if(!messageInput.value) {
+    evt.preventDefault();
+    messageInput.classList.add('error');
+    setTimeout(function () {
+      messageInput.classList.remove('error')}, 500)
+  }
+})
+
+
+

@@ -45,7 +45,7 @@
             <ul class="catalog-list" aria-label="Каталог товаров">
               <li>
                 <a class="catalog-list__link" href="#">каталог товаров</a>
-                <ul class="catalog-items">
+                <ul class="catalog-items catalog-items--nojs">
                   <li>
                     <ul class="catalog-items--column">
                       <li>
@@ -101,7 +101,7 @@
           <section class="slider">
             <h1 class="visually-hidden"> Интернет магазин гаджетов</h1>
             <div class="slider-wrapper">
-              <div class="slider-item slider-item--first">
+              <div class="slider-item slider-item--first slider-show">
                 <div class="slider-item-photo">
                   <img src="img/slider/slide1.png" alt="Селфи-палка" width="384" height="486">
                 </div>
@@ -175,13 +175,13 @@
             </div>
 
             <div class="slider__toggles">
-              <button class="slider__toggle slider__toggle--active" type="button">
+              <button class="slider__toggle slider__toggle--active" type="button" aria-label="Слайд 1">
                 <span class="visually-hidden">1</span>
               </button>
-              <button class="slider__toggle" type="button">
+              <button class="slider__toggle" type="button" aria-label="Слайд 2">
                 <span class="visually-hidden">2</span>
               </button>
-              <button class="slider__toggle" type="button">
+              <button class="slider__toggle" type="button" aria-label="Слайд 3">
                 <span class="visually-hidden">3</span>
               </button>
             </div>
@@ -302,7 +302,7 @@
 
               <div class="features-content-box features-content-box--guarantee">
                 <h2 class="section-title">Гарантия</h2>
-                <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
                     Товар, не дом, конечно же.</p>
               </div>
 
@@ -322,22 +322,22 @@
             <h2 class="visually-hidden">Наши партнеры</h2>
             <ul class="brands-list">
               <li>
-                <a class="brand-item" href="#">
+                <a class="brand-item" href="#" aria-label="Перейти на сайт компании DJI">
                   <img src="img/brand/brand1-color.png" alt="DJI" width="260" height="100">
                 </a>
               </li>
               <li>
-                <a class="brand-item" href="#">
+                <a class="brand-item" href="#" aria-label="Перейти на сайт компании SPGadjets">
                   <img src="img/brand/brand2-color.png" alt="SPGadjets" width="260" height="100">
                 </a>
               </li>
               <li>
-                <a class="brand-item" href="#">
+                <a class="brand-item" href="#" aria-label="Перейти на сайт компании GoPro">
                   <img src="img/brand/brand3-color.png" alt="GoPro" width="260" height="100">
                 </a>
               </li>
               <li>
-                <a class="brand-item" href="#">
+                <a class="brand-item" href="#" aria-label="Перейти на сайт компании Vive">
                   <img src="img/brand/brand4-color.png" alt="Vive" width="260" height="100">
                 </a>
               </li>
@@ -369,10 +369,10 @@
               <h2 class="section-title">Контакты</h2>
               <p class="about-desc">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
                 проверить работоспособность покупки. Всякое бывает.</p>
-              <a class="map popup-link" href="modalmap.html">
+              <a class="map popup-link" href="modal-map.html" aria-label="Показать в Google Maps">
                 <img src="img/map/map.png" alt="Карта проезда" width="560" height="222">
               </a>
-              <a class="link popup-link" href="modalform.html">напишите нам</a>
+              <a class="link popup-link" href="modal-form.html">напишите нам</a>
             </section>
             <!--//Contacts-->
           </div>
@@ -468,27 +468,27 @@
       </footer>
 
       <!--Pop-Up Form-->
-      <section id="modalform" class="popUp popUp__form">
-        <div class="popUp__body">
-          <div class="popUp__content">
-            <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="write-form-container">
-                <div class="write-form-wrapper">
-                  <label for="name__input">Ваше имя:</label>
-                  <input type="text" class="write-form__input " name="name-input" id="name__input" placeholder="Имя Фамилия" pattern="A-Z,a-z">
+      <section id="modal-form" class="popup popup-form">
+        <div class="popup-body">
+          <div class="popup-content">
+            <form class="popup-content-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="popup-content-form__container">
+                <div class="popup-content-form__wrapper">
+                  <label for="name-input">Ваше имя:</label>
+                  <input type="text" class="popup-content-form__input popup-content-form__input--name" name="name-input" id="name-input" placeholder="Имя Фамилия" pattern="^[А-Яа-яЁё\s]+$">
                 </div>
-                <div class="write-form-wrapper">
-                  <label for="email__input">Ваш e-mail:</label>
-                  <input type="email" class="write-form__input" name="email-input" id="email__input" placeholder="email@example.com" required>
+                <div class="popup-content-form__wrapper">
+                  <label for="email-input">Ваш e-mail:</label>
+                  <input type="email" class="popup-content-form__input popup-content-form__input--email" name="email-input" id="email-input" placeholder="email@example.com">
                 </div>
               </div>
-              <div class="write-form-wrapper">
-                <label for="text__input">Текст письма:</label>
-                <textarea class="write-form__input write-form__input--textarea" name="text-input" id="text__input" placeholder="В свободной форме" required></textarea>
+              <div class="popup-content-form__wrapper">
+                <label for="text-input">Текст письма:</label>
+                <textarea class="popup-content-form__input popup-content-form__input--textarea" name="text-input" id="text-input" placeholder="В свободной форме"></textarea>
               </div>
               <button class="link" type="submit">отправить</button>
             </form>
-            <a href="#" class="popup__close">
+            <a href="#" class="popup-content-close">
               <span class="visually-hidden">закрыть</span>
             </a>
           </div>
@@ -497,11 +497,11 @@
       <!--//Pop-Up Form-->
 
       <!--Pop-Up Map-->
-      <section id="modalmap" class="popUp popUp__map">
-        <div class="popUp__body">
-          <div class="popUp__content popUp__content--map">
+      <section id="modal-map" class="popup popup-map">
+        <div class="popup-body">
+          <div class="popup-content popup-content--map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1123749473704!2d37.5274293160995!3d55.68703400452975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sil!4v1592149158888!5m2!1sru!2sil" width="994" height="553" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <a href="#" class="popup__close">
+            <a href="#" class="popup-content-close">
               <span class="visually-hidden">закрыть</span>
             </a>
           </div>
