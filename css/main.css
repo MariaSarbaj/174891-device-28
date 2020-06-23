@@ -517,7 +517,7 @@ img {
 }
 
 .slider-item-desc {
-  min-width: 560px;
+  width: 560px;
   padding-top: 107px;
   position: relative;
 }
@@ -950,6 +950,7 @@ img {
 .footer .row {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer .row:first-of-type {
@@ -1005,7 +1006,7 @@ img {
 }
 
 .footer-nav {
-  margin-top: -3px;
+  margin-top: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1242,6 +1243,7 @@ img {
   line-height: initial;
 }
 
+.popup-content-form__input--name,
 .popup-content-form__input--email,
 .popup-content-form__input--textarea {
   transition: all 0.3s;
@@ -1815,6 +1817,11 @@ img {
   background-image: url("../img/icons/check-on.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.checkbox:disabled:active + .filter-form-color__checkbox,
+.radio:disabled:active + .filter-form-bluetooth__radio {
+  background-image: none;
 }
 
 .checkbox:hover + .filter-form-color__checkbox,

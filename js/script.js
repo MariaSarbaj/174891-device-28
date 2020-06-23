@@ -188,10 +188,18 @@ function bodyUnlock() {
 
 let writeForm = document.querySelector('.popup-content-form');
 let popupForm = document.getElementById('modal-form');
+let nameInput = document.getElementById('name-input');
 let emailInput = document.getElementById('email-input');
-let messageInput = document.getElementById('text-input')
+let messageInput = document.getElementById('text-input');
 
 writeForm.addEventListener('submit', function (evt) {
+  if(!nameInput.value) {
+    evt.preventDefault();
+    nameInput.classList.add('error');
+    setTimeout(function () {
+      nameInput.classList.remove('error')}, 500)
+  }
+
   if(!emailInput.value) {
     evt.preventDefault();
     emailInput.classList.add('error');
